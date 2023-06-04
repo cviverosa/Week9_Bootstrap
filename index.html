@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        /* This section is going to allow for navbar section items to be highlighted and will let user know they can click on links */
+        .nav-link:hover{
+            background-color: antiquewhite;
+         }
+         .nav-link:hover .nav-link-text {
+            color: red;
+        }
+    </style>
+    <title>Bootstrap Overview</title>
+</head>
+<!-- This class changes the bg color of the body and the text within the body to be color white -->
+<body class="bg-info text-white">
+    <!-- Div container styled with a different color, not fluid so it will not take up whole screen and styled border with text cenetered -->
+    <div class="container bg-success d-flex align-items-center justify-content-center" style="border: 6px solid pink; text-align: center">
+            <h1>Bootstrap</h1>
+        </div>
+    </div>
+    <!--Made div image fluid so quality will not change due to size of screen and so it is centered -->
+    <div class="container-fluid text-center">
+        <img src="images/Bootstrap.png"  alt="Bootstrap">
+    </div>
+    <!--Navbar section is responsible for expanding the navbar when the screen size reaches a certain breakpoint. Sm allows links to still be visible
+    when screen shrinks; expand has it to display links to breakpoint on large screens and then stack like a hamburger if it shrinks on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav"> This is not needed, just wanted to test this portion out-->
+                <!--In this section of the navbar, the default for the navbar list items in the ul is set to be horizontally listed
+               the navbar classes allows it so we can interact with the navbar and it properly styles it and puts correct spacing and navigation -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <span class="nav-link-text">Home</span>
+                            </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="components.html">
+                            <span class="nav-link-text">Components</span>
+                            </a>
+                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bootstrap_grid.html">
+                                    <span class="nav-link-text">Bootstrap Grid</span>
+                                    </a>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <span class="nav-link-text">Contact Us</span>
+                            </a>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
